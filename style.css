@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 222, 228);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #727c94;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px;
+  background: rgb(175, 0, 0);
+  border: none;
+  color: white;
+  width: 50%;
+  border-radius: 10px;
+  align-self: center;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 20px;
+}
+
+#app {
+  background-color: #7a0000;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #727c94;
+  border-radius: 10px;
+  background-color: #f2fbfc;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1f2937;
+  text-align: center;
+  padding: 10px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px 0px 10px 12px;
+  color: #1f2937;
+}
+
+#result {
+  color: black;
+}

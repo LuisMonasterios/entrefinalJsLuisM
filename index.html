@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora - IPCH</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./main.js"></script>
+    <script type = "text/JavaScript" src = "https://MomentJS.com/downloads/moment.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="calculadora">
+        <span class="title">Calcula tu Nota Final</span>
+      <p style="text-align: center;" id="beneficio"></p>
+        <form id="formulario">
+          <label for="n2">
+            <span class="label"></span>
+            <input
+              type="number"
+              id="n2"
+              name="notaEP"
+              min="0"
+              max="20"
+              placeholder="Nota de Examen Parcial"
+            />
+          </label>
+          <label for="n3">
+            <span class="label"></span>
+            <input
+              type="number"
+              id="n3"
+              name="notaPC"
+              min="0"
+              max="20"
+              placeholder="Nota de Practicas Calificadas"
+            />
+          </label>
+          <label for="n4">
+            <span class="label"></span>
+            <input
+              type="number"
+              id="n4"
+              name="notaPPY"
+              min="0"
+              max="20"
+              placeholder="Nota de Proyectos"
+            />
+          </label>
+          <label for="n5">
+            <span class="label"></span>
+            <input
+              type="number"
+              id="n5"
+              name="notaEF"
+              min="0"
+              max="20"
+              placeholder="Nota de Examen Final"
+            />
+          </label>
+          <label for="n6">
+            <span class="label"></span>
+            <input
+              type="number"
+              id="n6"
+              name="FI"
+              min="0"
+              max="10"
+              placeholder="Faltas injustificadas"
+            />
+          </label>
+          <button onclick="guardarPromedio()" type="submit" id="login-button">Calcular Notas</button>
+          <br />
+          <p id="result"></p>
+          <p id="alert"><b>Atención:</b> las notas serán cargadas a las <b>10 PM</b><p id="fecha"></p></p>
+        </form>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
